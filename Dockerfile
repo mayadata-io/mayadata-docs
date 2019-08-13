@@ -1,10 +1,3 @@
-FROM node:8.11.4
-
-WORKDIR /app/website
-
-EXPOSE 3000 35729
-COPY ./docs /app/docs
-COPY ./website /app/website
-RUN yarn install
-
-CMD ["yarn", "start"]
+FROM nginx:1.13
+COPY  website/build/MayaDataDocs/ /usr/share/nginx/html
+COPY ./nginx-custom.conf /etc/nginx/conf.d/default.conf
