@@ -1,0 +1,66 @@
+{
+  "mayadatadocs": {
+    "Product Overview": ["product/overview", "product/director", "product/openebs"],
+    "Getting Started": ["getstarted/singup", "getstarted/directorconnect","getstarted/installopenebs", "getstarted/manageclusters"],
+    "Resources": ["start1", "start2", "start3"],
+    "Applications": ["start1", "start2", "start3"],
+    "Getting Support": ["start1", "start2", "start3"],
+    "Platforms": ["start1", "start2", "start3"],
+    "Open Source": ["start1", "start2", "start3"],
+
+    "My Example Category": [
+      "examples",
+      {
+        "type": "subcategory",
+        "label": "My Example Subcategory",
+        "ids": [
+          "doc1", "doc2"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "My Next Subcategory",
+        "ids": [
+          "doc3", "doc4"
+        ]
+      }
+    ],
+
+    "My Example Category2": [
+      "examples2",
+      {
+        "type": "subcategory",
+        "label": "My Example Subcategory2",
+        "ids": [
+          "2doc1", "2doc2"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "My Next Subcategory2",
+        "ids": [
+          "2doc3"
+        ]
+      }
+    ],
+
+    "My Example Category3": [
+      "examples2",
+      {
+        "type": "subcategory",
+        "label": "My Example Subcategory3",
+        "ids": [
+          "3doc1", "3doc2"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "My Next Subcategory3",
+        "ids": [
+          "3doc3"
+        ]
+      }
+    ]
+  }
+}
+

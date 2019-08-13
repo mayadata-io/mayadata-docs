@@ -1,0 +1,12 @@
+{
+  "mayadatadocs": {
+    "Product Overview": ["product/overview", "product/director", "product/openebs"],
+    "Getting Started": ["getstarted/signup", "getstarted/directoronline","getstarted/directoronprem", "getstarted/installopenebs", "getstarted/manageclusters"],
+    "Resources": ["Use Cases", "Videos", "Blogs"],
+    "Applications": ["ElasticSearch", "Prometheus", "Minio"],
+    "Getting Support": ["Supportprocess"],
+    "Platforms": ["AWS", "GCP", "Azure", "Konvoy", "OpenShift", "Rancher", "Packet", "DIY K8S"],
+    "Open Source": ["OpenEBS", "Litmus", "WeaveScope", "joincommunity"]
+  }
+}
+
