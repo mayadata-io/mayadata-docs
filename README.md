@@ -23,7 +23,9 @@ Ensure you have the latest version of [Node](https://nodejs.org/en/download/) in
 
 Follow the below instructions to build and test your changes.
 
+```
 git clone -b https://github.com/mayadata-io/mayadata-docs.git
+```
 
 
 
