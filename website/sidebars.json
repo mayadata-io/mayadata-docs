@@ -3,15 +3,8 @@
 
     "Product": [
       "product/overview", 
-      "product/concepts",
-      {
-        "type": "subcategory",
-        "label": "Product components",
-        "ids": [
-          "product/director",
-          "product/openebs"
-        ]
-      }
+      "product/models",
+      "product/services"
     ],
 
     "Getting started": ["getstarted/signup", "getstarted/directoronline","getstarted/directoronprem", "getstarted/installopenebs", "getstarted/manageclusters"],
