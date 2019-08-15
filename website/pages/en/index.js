@@ -133,7 +133,7 @@ class Index extends React.Component {
             image: `${baseUrl}img/usecases.svg`,
             imageAlign: 'top',
             title: `[Product and Use Cases](${siteConfig.baseUrl}${siteConfig.docsUrl}/resources/usecases.html)`,
-            imageLink: siteConfig.baseUrl + 'docs/resources/usecases.html',
+            imageLink: siteConfig.baseUrl + 'docs/product/overview',
 
           },
           {

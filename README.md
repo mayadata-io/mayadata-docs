@@ -5,7 +5,8 @@
 
 <hr>
 
-## Building docs:
+# Building docs:
+
 
 The default branch is `staging`. Contributions are accepted to `staging` branch. The accepted doc changes are visible at docs.mayadatastaging.io 
 
@@ -23,11 +24,13 @@ Ensure you have the latest version of [Node](https://nodejs.org/en/download/) in
 
 Follow the below instructions to build and test your changes.
 
+```
 git clone -b https://github.com/mayadata-io/mayadata-docs.git
+```
 
 
 
-### On your console
+## On your console
 
 ```
 cd website
