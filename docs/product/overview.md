@@ -10,8 +10,13 @@ sidebar_label: Product overview
 
 
 
+- Container Attached Storage or CAS
+- Declarative day2 data operations
+- Data backup and migration
+- Data visibility for Kubernetes SRE and VP Ops persona
+- Chaos engineering for data operations resiliency
 
-
+## Benefits
 
 
 ## Features 
@@ -23,6 +28,8 @@ sidebar_label: Product overview
 - Chaos engineering for data operations resiliency
 
 
+OpenEBS community edition is free and community support is available on OpenEBS-Slack channel. MayaData OpenEBS Enterprise Platform offers dedicated support for enterprises along with more rugged product and a management portal. The basic enterprise platform is also free if you are using just for short term multi-cloud monitoring and logging.  
+
 
 ## Benefits
 
@@ -32,7 +39,9 @@ sidebar_label: Product overview
 - Built-in Kubenetes logging and monitoring services for the enterprise
 - Enterprise grade support from MayaData
 
-## Components of the platform
+
+1. I am using OpenEBS open source version. Can you provide me support through MayaData OpenEBS Enterprise Platform ? 
+
 
 <img src="/docs/assets/product/moep.svg" alt="Components of MayaData OpenEBS Enterprise Platform" style="width:600px;">
 
