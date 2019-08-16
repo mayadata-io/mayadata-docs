@@ -129,7 +129,7 @@ class Index extends React.Component {
       <Block layout="threeColumn">
         {[
           {
-            content: 'Cloud native storage and data management for enterprises is done easily using declerative YAMLS. Read more about OpenEBS Enterprise Platform and how you can use it for specific use cases.' ,
+            content: 'Cloud native storage and data management for enterprises is done easily using declarative YAMLS. Read more about OpenEBS Enterprise Platform and how you can use it for specific use cases.' ,
             image: `${baseUrl}img/usecases.svg`,
             imageAlign: 'top',
             title: `[Product and Use Cases](${siteConfig.baseUrl}${siteConfig.docsUrl}/product/overview)`,
