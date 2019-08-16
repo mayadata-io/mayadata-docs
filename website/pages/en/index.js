@@ -163,7 +163,7 @@ class Index extends React.Component {
           </div>
           <div className="featured-card_body">
             <p>
-            Answers to commonly asked questions
+            Team administration, user settings, premium plans, plan usage, or billing.
             </p>
             <strong>Have a look</strong>
           </div>
@@ -173,8 +173,8 @@ class Index extends React.Component {
             <h3>FAQs</h3>
           </div>
           <div className="featured-card_body">
-            <p>
-              Team administration, user settings, premium plans, plan usage, or billing.</p>
+            <p>Answers to commonly asked questions
+              </p>
           </div>
         </div>
 
