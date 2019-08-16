@@ -1,0 +1,60 @@
+/*theme for docs Styling*/
+.docs-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary);
+  color: #fff;
+  padding: 26px 0;
+}
+.home-page-outlet {
+  margin: 72px 0;
+}
+.featured-title h2{
+  font-size: 28px;
+  font-weight: 300;
+  margin-bottom: 22px;
+}
+.featured-card-block {
+  padding: 6px;
+}
+
+.featured-card_item {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid #efeff2;
+  box-shadow: 0 0 5px 0 #efeff2;
+  padding: 1.25rem;
+  border-radius: .25rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.featured-card_item:hover {
+  transition: box-shadow 0.35s ease 0s;
+  box-shadow: rgba(71, 88, 114, 0.16) 0px 4px 16px
+}
+
+.featured-card_header h3 {
+  font-weight: 300;
+  font-size: 28px;
+  padding: 12px 0;
+  margin-block-start: 0;
+}
+
+.featured-card_body {
+  color: #4D4E5A;
+}
+
+.hero-search-input {
+  max-width: 400px;
+  margin: 46px 0;
+}
+.hero-search-input input {
+  width: 400px;
+}

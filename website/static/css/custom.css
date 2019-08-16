@@ -1,5 +1,6 @@
 /* your custom css */
 
+/* media query start here--- */
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
 }
 
@@ -13,4 +14,10 @@
 }
 
 @media only screen and (min-width: 1500px) {
+}
+
+/* media query ends here--- */
+
+.gridBlock {
+  flex-wrap: unset;
 }

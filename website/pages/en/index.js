@@ -94,9 +94,15 @@ class Index extends React.Component {
 
     const Welcome = () => (
       <div
-        className="productShowcaseSection paddingBottom"
+        className="paddingBottom"
         style={{textAlign: 'center'}}>
-        <h1>MayaData OpenEBS Enterprise Platform Documentation</h1>
+        <div className="docs-hero">
+          <h1>MayaData OpenEBS Enterprise Platform Documentation</h1>
+          <div className="hero-search-input">
+            <input className="form-control form-control-lg " placeholder="Search our help page"/>
+          </div>
+        </div>
+
       </div>
     );
 
@@ -108,7 +114,6 @@ class Index extends React.Component {
         <MarkdownBlock>These are features of this project</MarkdownBlock>
       </div>
     );
-
 
     const Description = () => (
       <Block background="dark">
@@ -124,6 +129,58 @@ class Index extends React.Component {
       </Block>
     );
 
+    const FeaturedCard = () => (
+      <Container>
+        <div className="featured-title">
+          <h2>Help Desk</h2>
+        </div>
+        <div className="featured-card-block gridBlock">
+        <div className="featured-card_item blockElement threeByGridBlock">
+          <div className="featured-card_header">
+            <h3>Get started</h3>
+          </div>
+          <div className="featured-card_body">
+            <p>
+              Learn how to sign up with MayaData and get free access to the product. Signup and connect your clusters to either Director Online or Director Onprem and manage your OpenEBS installations easily.
+            </p>
+            <strong>Connect your clusters</strong>
+          </div>
+        </div>
+        <div className="featured-card_item blockElement threeByGridBlock">
+          <div className="featured-card_header">
+            <h3>Troubleshooting</h3>
+          </div>
+          <div className="featured-card_body">
+            <p>
+             Don’t panic — there are a few little things that tend to fix most problems.
+            </p>
+            <strong>Let’s shoot that trouble</strong>
+          </div>
+        </div>
+        <div className="featured-card_item blockElement threeByGridBlock">
+          <div className="featured-card_header">
+            <h3>Billing & Settings</h3>
+          </div>
+          <div className="featured-card_body">
+            <p>
+            Team administration, user settings, premium plans, plan usage, or billing.
+            </p>
+            <strong>Have a look</strong>
+          </div>
+        </div>
+        <div className="featured-card_item blockElement threeByGridBlock">
+          <div className="featured-card_header">
+            <h3>FAQs</h3>
+          </div>
+          <div className="featured-card_body">
+            <p>Answers to commonly asked questions
+              </p>
+          </div>
+        </div>
+
+      </div>
+      </Container>
+    );
 
     const TableHeadings = () => (
       <Block layout="threeColumn">
@@ -150,6 +207,7 @@ class Index extends React.Component {
             title: `[Getting Support](${siteConfig.baseUrl}${siteConfig.docsUrl}/support/supportprocess.html)`,
             imageLink: siteConfig.baseUrl + 'docs/support/supportprocess.html',
           },
+
         ]}
       </Block>
     );
@@ -186,7 +244,9 @@ class Index extends React.Component {
     return (
         <div className="mainContainer">
           <Welcome />
-          <TableHeadings />
+          <div className="home-page-outlet">
+          <FeaturedCard />
+          </div>
         </div>
     );
   }
