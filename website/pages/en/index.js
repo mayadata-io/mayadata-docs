@@ -97,9 +97,9 @@ class Index extends React.Component {
         className="paddingBottom"
         style={{textAlign: 'center'}}>
         <div className="docs-hero">
-          <h1>MayaData OpenEBS Enterprise Platform Documentation</h1>
+          <h1>OpenEBS Enterprise Platform</h1>
           <div className="hero-search-input">
-            <input className="form-control form-control-lg " placeholder="Search our help page"/>
+            <input className="form-control form-control-lg " placeholder="Search for something: "/>
           </div>
         </div>
 
@@ -129,52 +129,43 @@ class Index extends React.Component {
       </Block>
     );
 
-    const FeaturedCard = () => (
+    const DocsCard = () => (
       <Container>
         <div className="featured-title">
-          <h2>Help Desk</h2>
+          <h2>Docs</h2>
         </div>
         <div className="featured-card-block gridBlock">
         <div className="featured-card_item blockElement threeByGridBlock">
           <div className="featured-card_header">
-            <h3>Get started</h3>
+            <h3>Product Overview</h3>
           </div>
           <div className="featured-card_body">
             <p>
-              Learn how to sign up with MayaData and get free access to the product. Signup and connect your clusters to either Director Online or Director Onprem and manage your OpenEBS installations easily.
+		Features and deployment models.
             </p>
-            <strong>Connect your clusters</strong>
+            <strong>Read the benefits</strong>
           </div>
         </div>
         <div className="featured-card_item blockElement threeByGridBlock">
           <div className="featured-card_header">
-            <h3>Troubleshooting</h3>
+            <h3>Getting started</h3>
           </div>
           <div className="featured-card_body">
             <p>
-             Don’t panic — there are a few little things that tend to fix most problems.
+		User guides to help you get started.
             </p>
-            <strong>Let’s shoot that trouble</strong>
+            <strong>User guides</strong>
           </div>
         </div>
         <div className="featured-card_item blockElement threeByGridBlock">
           <div className="featured-card_header">
-            <h3>Billing & Settings</h3>
+            <h3>Use cases</h3>
           </div>
           <div className="featured-card_body">
             <p>
-            Team administration, user settings, premium plans, plan usage, or billing.
+		Data Science, logging, monitoring ...
             </p>
-            <strong>Have a look</strong>
-          </div>
-        </div>
-        <div className="featured-card_item blockElement threeByGridBlock">
-          <div className="featured-card_header">
-            <h3>FAQs</h3>
-          </div>
-          <div className="featured-card_body">
-            <p>Answers to commonly asked questions
-              </p>
+            <strong>Learn more</strong>
           </div>
         </div>
 
@@ -182,6 +173,49 @@ class Index extends React.Component {
       </Container>
     );
 
+    const SupportCard = () => (
+      <Container>
+        <div className="featured-title">
+          <h2>Support</h2>
+        </div>
+        <div className="featured-card-block gridBlock">
+        <div className="featured-card_item blockElement threeByGridBlock">
+          <div className="featured-card_header">
+            <h3>Knowledge Base</h3>
+          </div>
+          <div className="featured-card_body">
+            <p>
+		How-to articles and troublshooting guides.
+            </p>
+            <strong>Browse knowledge base</strong>
+          </div>
+        </div>
+        <div className="featured-card_item blockElement threeByGridBlock">
+          <div className="featured-card_header">
+            <h3>Community Forums</h3>
+          </div>
+          <div className="featured-card_body">
+            <p>
+		Share your learnings and problems
+            </p>
+            <strong>Community forums</strong>
+          </div>
+        </div>
+        <div className="featured-card_item blockElement threeByGridBlock">
+          <div className="featured-card_header">
+            <h3>Submit a ticket</h3>
+          </div>
+          <div className="featured-card_body">
+            <p>
+		Did not find what you are looking for? We can help.
+            </p>
+            <strong>Support portal</strong>
+          </div>
+        </div>
+
+      </div>
+      </Container>
+    );
     const TableHeadings = () => (
       <Block layout="threeColumn">
         {[
@@ -245,7 +279,8 @@ class Index extends React.Component {
         <div className="mainContainer">
           <Welcome />
           <div className="home-page-outlet">
-          <FeaturedCard />
+          <DocsCard />
+          <SupportCard />
           </div>
         </div>
     );
