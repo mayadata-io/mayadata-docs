@@ -1,7 +1,7 @@
 ---
 id: directoronprem
 title: Director Onprem introduction
-sidebar_label: Install Director Onprem
+sidebar_label: Install DirectorOnprem
 ---
 
 ------
