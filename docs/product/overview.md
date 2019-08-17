@@ -58,7 +58,7 @@ OpenEBS community edition and enterprise edition share the same code base. Enter
 
 
 
-Community users can connect their Kubernetes clusters to Director Online or Director Onprem by signing up at MayaData to get free visibility of OpenEBS components. Director software will upgrade OpenEBS control plane and volume software where applicable and necessary.
+Community users can connect their Kubernetes clusters to Director Online or Director Onprem by signing up at MayaData to get free visibility of OpenEBS components. Director software will upgrade OpenEBS control plane and volume software where applicable and necessary. See [getting started with OpenEBS](/docs/getstarted/usingopenebs). 
 
 ### Director
 
