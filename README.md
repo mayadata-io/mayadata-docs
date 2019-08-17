@@ -1,7 +1,7 @@
 # mayadata-docs
 
 
-<img src="docs/assets/product/mdocs.svg" alt="Documentation for MayaData OpenEBS Enterprise Platform" style="width:800px;">
+<img src="docs/assets/product/mdocs.png" alt="Documentation for MayaData OpenEBS Enterprise Platform" style="width:800px;">
 
 <hr>
 

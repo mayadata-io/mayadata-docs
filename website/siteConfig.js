@@ -10,7 +10,7 @@
 
 
 const siteConfig = {
-  title: 'Documentation', // Title for your website.
+  title: 'Product Documentation', // Title for your website.
   tagline: 'MayaData OpenEBS Enterprise Platform',
   url: 'https://docs.mayadata.io', // Your website URL
   baseUrl: '/', // Base URL for your project */
