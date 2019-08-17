@@ -1,7 +1,7 @@
 ---
 id: signup
 title: Sign Up for a MayaData Account
-sidebar_label: Sign Up with MayaData
+sidebar_label: Sign up with MayaData
 ---
 
 ------

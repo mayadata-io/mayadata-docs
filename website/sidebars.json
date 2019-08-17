@@ -3,13 +3,19 @@
 
     "Product": [
       "product/overview", 
-
       "product/models",
       "product/services"
-
     ],
 
-    "Getting started": ["getstarted/signup", "getstarted/directoronline","getstarted/directoronprem", "getstarted/installopenebs", "getstarted/manageclusters"],
+    "Getting started": [
+	"getstarted/signup", 
+	"getstarted/userportal", 
+	"getstarted/directoronline",
+	"getstarted/directoronprem",
+	"getstarted/installopenebs",
+	"getstarted/manageclusters"
+  	],
+
     "User guides": [
       {
         "type": "subcategory",
@@ -24,6 +30,7 @@
         "type": "subcategory",
         "label": "Director Onprem specific",
         "ids": [
+          "product/userguides/onprem/install",
           "product/userguides/onprem/sslcerts",
           "product/userguides/onprem/onpremupgrade"
         ]
