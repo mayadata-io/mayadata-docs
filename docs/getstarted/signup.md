@@ -22,7 +22,7 @@ If you have not already signed up for an account, begin by creating one.
 
 Visit [Sign Up](https://account.mayadatastaging.io/signup) page for creating an account.
 
-
+<img src="/docs/assets/product/signup.png" alt="Signing up for an account" style="width:400px;">
 
 Sign-up can be done in three methods.
 
@@ -40,7 +40,7 @@ All communication with you will be done using your email address. Having a compl
 
 After you sign-up for an account, you are required to complete your profile and verify your email. If your email address is not provided by GitHub or is different than what is provided by GitHub, provide your email address in the user portal and verify it. 
 
-
+<img src="/docs/assets/product/otp.png" alt="Email verification for an account" style="width:400px;">
 
 ## Benefits of having an account
 
@@ -62,7 +62,7 @@ Teaming feature in OpenEBS Director is in the short term roadmap. Currently, all
 
 ## Account cancellation or deletion
 
-
+If you have issues related to your account, see [account troubleshooting](/docs/product/userguides/common/acctroubleshoot).
 
 To request cancellation or deletion of your account, email us at support@mayadata.io or submit a ticket at the support portal.
 
