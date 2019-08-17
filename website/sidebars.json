@@ -15,6 +15,7 @@
         "type": "subcategory",
         "label": "Common",
         "ids": [
+          "product/userguides/common/acctroubleshoot",
           "product/userguides/common/topology",
           "product/userguides/common/logs"
         ]
