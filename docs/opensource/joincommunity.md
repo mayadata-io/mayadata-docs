@@ -6,10 +6,20 @@ sidebar_label: Join our community
 
 ------
 
-For both OpenEBS and Litmus projects, the community slack channel is same
-
-Provide a link to join slack
+OpenEBS community discussions happen at **#users** channel at https://openebs-community.slack.com/
 
 
 
-Provide some nice metrics/badges here if possible
+Litmus community discussions happen at **#litmus** channel at the same OpenEBS community slack channel.
+
+
+
+<br>
+
+<a href="https://slack.openebs.io" target="_blank">
+
+<img src="/docs/assets/general/joinslack.png" alt="Join OpenEBS comunity" style="width:500px;" align="center">
+
+</a>
+
+<br>
