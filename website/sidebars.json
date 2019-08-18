@@ -56,7 +56,7 @@
         ]
       }
     ],
-    "Resources": ["resources/usecases", "resources/videos" ],
+    "Resources": ["resources/blogs", "resources/videos" ],
 
     "Use Cases": [ 
 	{
