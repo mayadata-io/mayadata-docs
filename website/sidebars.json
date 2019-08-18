@@ -56,8 +56,48 @@
         ]
       }
     ],
-    "Resources": ["resources/usecases", "resources/videos", "resources/blogs" ],
-    "Stateful applications": ["applications/elasticsearch", "applications/prometheus", "applications/minio"],
+    "Resources": ["resources/usecases", "resources/videos" ],
+
+    "Use Cases": [ 
+	{
+           "type": "subcategory",
+           "label": "Databases",
+           "ids": [
+			"usecases/databases/postgresql", 
+			"usecases/databases/percona", 
+			"usecases/databases/cassandra", 
+			"usecases/databases/nuodb", 
+			"usecases/databases/mongodb", 
+			"usecases/databases/redis" 
+	   ]
+	},
+	{
+           "type": "subcategory",
+           "label": "Data Science",
+           "ids": [
+			"usecases/datascience/kafka" 
+	   ]
+	},
+	{
+           "type": "subcategory",
+           "label": "CI/CD",
+           "ids": [
+			"usecases/cicd/gitlab" 
+	   ]
+	},
+	{
+           "type": "subcategory",
+           "label": "Cloud Native Services",
+           "ids": [
+			"usecases/cloudnative/logging", 
+			"usecases/cloudnative/monitoring", 
+			"usecases/cloudnative/nfs" 
+	   ]
+	}
+    ],
+	
+
+
     "Platforms": ["platforms/aws", "platforms/eks", "platforms/aks","platforms/gcp","platforms/gke","platforms/diyk8s","platforms/packet","platforms/openshift","platforms/rancher","platforms/konvoy"],
     "Open source projects": ["opensource/openebs", "opensource/litmus", "opensource/joincommunity" ]
 
