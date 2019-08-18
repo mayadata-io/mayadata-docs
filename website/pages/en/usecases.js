@@ -97,10 +97,7 @@ class Index extends React.Component {
         className="paddingBottom"
         style={{textAlign: 'center'}}>
         <div className="docs-hero">
-          <h1>OpenEBS Enterprise Platform</h1>
-          <div className="hero-search-input">
-            <input className="form-control form-control-lg " placeholder="Search for something: "/>
-          </div>
+          <h1>Use Cases</h1>
         </div>
 
       </div>
@@ -129,15 +126,15 @@ class Index extends React.Component {
       </Block>
     );
 
-    const DocsCard = () => (
+    const DatabasesCard = () => (
       <Container>
         <div className="featured-title">
-          <h2>Product Docs</h2>
+          <h2>Cloud Native Databases</h2>
         </div>
         <div className="featured-card-block gridBlock">
         <div className="featured-card_item blockElement threeByGridBlock">
           <div className="featured-card_header">
-            <h3>Product Overview</h3>
+            <h3>PostgreSQL</h3>
           </div>
           <div className="featured-card_body">
             <p>
@@ -148,7 +145,7 @@ class Index extends React.Component {
         </div>
         <div className="featured-card_item blockElement threeByGridBlock">
           <div className="featured-card_header">
-            <h3>Getting started</h3>
+            <h3>MongoDB</h3>
           </div>
           <div className="featured-card_body">
             <p>
@@ -159,7 +156,40 @@ class Index extends React.Component {
         </div>
         <div className="featured-card_item blockElement threeByGridBlock">
           <div className="featured-card_header">
-            <h3>Use cases</h3>
+            <h3>NuoDB</h3>
+          </div>
+          <div className="featured-card_body">
+            <p>
+		Data Science, logging, monitoring ...
+            </p>
+            <strong>Learn more</strong>
+          </div>
+        </div>
+        <div className="featured-card_item blockElement threeByGridBlock">
+          <div className="featured-card_header">
+            <h3>Percona</h3>
+          </div>
+          <div className="featured-card_body">
+            <p>
+		Data Science, logging, monitoring ...
+            </p>
+            <strong>Learn more</strong>
+          </div>
+        </div>
+        <div className="featured-card_item blockElement threeByGridBlock">
+          <div className="featured-card_header">
+            <h3>Redis</h3>
+          </div>
+          <div className="featured-card_body">
+            <p>
+		Data Science, logging, monitoring ...
+            </p>
+            <strong>Learn more</strong>
+          </div>
+        </div>
+        <div className="featured-card_item blockElement threeByGridBlock">
+          <div className="featured-card_header">
+            <h3>Cassandra</h3>
           </div>
           <div className="featured-card_body">
             <p>
@@ -173,49 +203,93 @@ class Index extends React.Component {
       </Container>
     );
 
-    const SupportCard = () => (
+    const DataScienceCard = () => (
       <Container>
         <div className="featured-title">
-          <h2>Product Support</h2>
+          <h2>Cloud Native Datascience</h2>
         </div>
         <div className="featured-card-block gridBlock">
         <div className="featured-card_item blockElement threeByGridBlock">
           <div className="featured-card_header">
-            <h3>Knowledge Base</h3>
+            <h3>Kafka</h3>
           </div>
           <div className="featured-card_body">
             <p>
-		How-to articles and troublshooting guides.
+		Features and deployment models.
             </p>
-            <strong>Browse knowledge base</strong>
-          </div>
-        </div>
-        <div className="featured-card_item blockElement threeByGridBlock">
-          <div className="featured-card_header">
-            <h3>Community Forums</h3>
-          </div>
-          <div className="featured-card_body">
-            <p>
-		Share your learnings and problems
-            </p>
-            <strong>Community forums</strong>
-          </div>
-        </div>
-        <div className="featured-card_item blockElement threeByGridBlock">
-          <div className="featured-card_header">
-            <h3>Submit a ticket</h3>
-          </div>
-          <div className="featured-card_body">
-            <p>
-		Did not find what you are looking for? We can help.
-            </p>
-            <strong>Support portal</strong>
+            <strong>Read the benefits</strong>
           </div>
         </div>
 
       </div>
       </Container>
     );
+
+    const CicdCard = () => (
+      <Container>
+        <div className="featured-title">
+          <h2>Cloud Native CI/CD </h2>
+        </div>
+        <div className="featured-card-block gridBlock">
+        <div className="featured-card_item blockElement threeByGridBlock">
+          <div className="featured-card_header">
+            <h3>GitLab</h3>
+          </div>
+          <div className="featured-card_body">
+            <p>
+		Features and deployment models.
+            </p>
+            <strong>Read the benefits</strong>
+          </div>
+        </div>
+      </div>
+      </Container>
+    );
+
+    const CloudNativeCard = () => (
+      <Container>
+        <div className="featured-title">
+          <h2>Cloud Native Infrastructure </h2>
+        </div>
+        <div className="featured-card-block gridBlock">
+        <div className="featured-card_item blockElement threeByGridBlock">
+          <div className="featured-card_header">
+            <h3>Logging</h3>
+          </div>
+          <div className="featured-card_body">
+            <p>
+		Features and deployment models.
+            </p>
+            <strong>Read the benefits</strong>
+          </div>
+        </div>
+        <div className="featured-card_item blockElement threeByGridBlock">
+          <div className="featured-card_header">
+            <h3>Monitoring</h3>
+          </div>
+          <div className="featured-card_body">
+            <p>
+		User guides to help you get started.
+            </p>
+            <strong>User guides</strong>
+          </div>
+        </div>
+        <div className="featured-card_item blockElement threeByGridBlock">
+          <div className="featured-card_header">
+            <h3>NFS or Shared Storage</h3>
+          </div>
+          <div className="featured-card_body">
+            <p>
+		Data Science, logging, monitoring ...
+            </p>
+            <strong>Learn more</strong>
+          </div>
+        </div>
+
+      </div>
+      </Container>
+    );
+
     const TableHeadings = () => (
       <Block layout="threeColumn">
         {[
@@ -279,8 +353,10 @@ class Index extends React.Component {
         <div className="mainContainer">
           <Welcome />
           <div className="home-page-outlet">
-          <DocsCard />
-          <SupportCard />
+          <CloudNativeCard />
+          <DatabasesCard />
+          <DataScienceCard />
+          <CicdCard />
           </div>
         </div>
     );

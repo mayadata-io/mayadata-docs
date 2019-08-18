@@ -27,8 +27,8 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {doc: 'applications/elasticsearch', label: 'Applications'},
-    {doc: 'resources/usecases', label: 'Use Cases'},
+    {doc: 'platforms/konvoy', label: 'Platforms'},
+    {page: 'usecases', label: 'Use Cases'},
     {doc: 'support/supportprocess', label: 'Get Support'},
     //{page: 'support/supportprocess', label: 'Get Support'},
     {search: true},
