@@ -8,26 +8,36 @@ sidebar_label: Support Process
 
 
 
-> <b>Note:</b> You get free support when you are evaluating OpenEBS Enterprise platform.
+## Sign-Up 
 
-## Free support
+> When you sign-up you get access to knowledge base and community forums.
 
-To obtain  free support for OpenEBS Enterprise Platform follow the below process
+- If you haven't already signed up, Sign Up at [MayaData](https://account.mayadata.io) . 
+- Once you sign up -
+  - You get free access to OpenEBS Director, which will help you troubleshoot your Kubernetes environment with centralized monitoring, logging and alerting. By default, the connected clusters to Director are on unlimited free plan. 
+  - You get freee access to Knowledge base and community forums. 
 
-- If you haven't already signed up, Sign Up at [MayaData](https://account.mayadata.io)
+  <div align="center">
+    <img src="/docs/assets/general/kb.png" alt="Knowledge Base" style="width:20px;"> <a href="" target="_blank"> <font size="4">Knowledge Base</font></a>
+  </div>
 
-- Once you sign up, you get access to knowledge base and community forums. They are available at  <>
+  <div align="center">
+  <img src="/docs/assets/general/users.png" alt="Community forums" style="width:20px;"> <a href="" target="_blank"> <font size="4">Community Forums</font></a>
+  </div>
 
-- Connect your Kubernetes clusters where you have installed OpenEBS to either  DirectorOnline or DirectorOnprem. By default, the connected clusters are on free plan. Upgrade them to evaluation version to make those clusters eligible for support via support tickets and online agents.
+## Evaluate 
 
-- Request for a private slack channel if you prefer communicating via slack with MayaData support team
+> During evaluation period, you get free support from MayaData.
 
-  
+- In Director, upgrade the clusters to evaluation version to make them eligible for support via support tickets and online agents.
+- Request for a private slack channel if you prefer communicating via slack with MayaData support team.
 
-## Commercial support
+## Upgrade
 
-- By default you start on a free support plan and start evaluating the OpenEBS Enterprise Platform for the clusters you are interested in.
-- For commercial support, either submit a ticket on the support portal or contact sales at sales@mayadata.io or support@mayadata.io
+> Multiple support plans are available. Choose the plan that suits you.
+
+- Upgrade the clusters on evaluation plan to premium plan to get commercial support from MayaData. When you upgrade, our sales team will send you the pricing plans, both standard and custom if needed.
+- For obtaining commercial support, either submit a ticket on the support portal or directly talk to an agent on the support portal.
 
 
 
