@@ -15,21 +15,33 @@
 	"getstarted/usingopenebs"
   	],
 
-    "Getting support": ["support/supportprocess"],
+    "Getting support": [
+	"support/supportprocess",
+	"support/acctroubleshoot"
+	],
 
     "Director user guides": [
       {
         "type": "subcategory",
-        "label": "Common",
+        "label": "Director guides",
         "ids": [
-          "product/userguides/common/acctroubleshoot",
-          "product/userguides/common/topology",
-          "product/userguides/common/logs"
+          "product/userguides/common/connecting",
+          "product/userguides/common/overview",
+          "product/userguides/common/crosscloud",
+          "product/userguides/common/openebstroubleshoot",
+          "product/userguides/common/openebsvolmonitor",
+          "product/userguides/common/applicationsdash",
+          "product/userguides/common/cstorpools",
+          "product/userguides/common/k8stroubleshooting",
+          "product/userguides/common/logs",
+          "product/userguides/common/chaosmetrics",
+          "product/userguides/common/dmaas",
+          "product/userguides/common/disconnecting"
         ]
       },
       {
         "type": "subcategory",
-        "label": "Director Onprem specific",
+        "label": "Onprem specific",
         "ids": [
           "product/userguides/onprem/install",
           "product/userguides/onprem/sslcerts",
@@ -38,7 +50,7 @@
       },
       {
         "type": "subcategory",
-        "label": "Director Online specific",
+        "label": "Online specific",
         "ids": [
           "product/userguides/online/premiumplan"
         ]
