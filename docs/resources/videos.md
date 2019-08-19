@@ -8,5 +8,8 @@ sidebar_label: Related Videos
 
 
 
-Provide a link to OpenEBS video
+- Auto DevOps 
+
+[![Auto DevOps using cStor](/docs/assets/general/auto-devops.png)](https://youtu.be/eVcSxKl65vA)
+
 
