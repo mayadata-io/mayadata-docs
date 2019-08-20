@@ -15,8 +15,8 @@ const GridBlock = CompLibrary.GridBlock;
 
 class HomeSplash extends React.Component {
   render() {
-    const {siteConfig, language = ''} = this.props;
-    const {baseUrl, docsUrl} = siteConfig;
+    const { siteConfig, language = '' } = this.props;
+    const { baseUrl, docsUrl } = siteConfig;
     const docsPart = `${docsUrl ? `${docsUrl}/` : ''}`;
     const langPart = `${language ? `${language}/` : ''}`;
     const docUrl = doc => `${baseUrl}${docsPart}${langPart}${doc}`;
@@ -76,26 +76,29 @@ class HomeSplash extends React.Component {
 
 class Index extends React.Component {
   render() {
-    const {config: siteConfig, language = ''} = this.props;
-    const {baseUrl} = siteConfig;
+    const { config: siteConfig, language = '' } = this.props;
+    const { baseUrl } = siteConfig;
 
-    const Block = props => (
-      <Container
-        padding={['bottom', 'top']}
-        id={props.id}
-        background={props.background}>
-        <GridBlock
-          align="center"
-          contents={props.children}
-          layout={props.layout}
-        />
-      </Container>
+    const UnorderList = props => (
+      <div >
+        <div className="usecase-title">
+          <h2>{
+            props.items.map(item => (
+              item.heading
+            ))
+          }</h2>
+        </div>
+        <ul>
+          {props.items[0].items.map(item => (
+            <a href={item.link}>  <li className="usecase-article">  {item.title} </li> </a>
+          ))}
+        </ul>
+      </div>
     );
-
     const Welcome = () => (
       <div
         className="paddingBottom"
-        style={{textAlign: 'center'}}>
+        style={{ textAlign: 'center' }}>
         <div className="docs-hero">
           <h1>Use Cases</h1>
         </div>
@@ -103,262 +106,117 @@ class Index extends React.Component {
       </div>
     );
 
-    const FeatureCallout = () => (
-      <div
-        className="productShowcaseSection paddingBottom"
-        style={{textAlign: 'center'}}>
-        <h2>Feature Callout</h2>
-        <MarkdownBlock>These are features of this project</MarkdownBlock>
-      </div>
-    );
-
-    const Description = () => (
-      <Block background="dark">
-        {[
-          {
-            content:
-              'This is another description of how this project is useful',
-            image: `${baseUrl}img/undraw_note_list.svg`,
-            imageAlign: 'right',
-            title: 'Description',
-          },
-        ]}
-      </Block>
-    );
-
-    const DatabasesCard = () => (
+    const ListUsecases = () => (
       <Container>
-        <div className="featured-title">
-          <h2>Cloud Native Databases</h2>
-        </div>
-        <div className="featured-card-block gridBlock">
-        <div className="featured-card_item blockElement threeByGridBlock">
-          <div className="featured-card_header">
-            <h3>PostgreSQL</h3>
+        <div className="home-page-outlet">
+         <h2 className="listusecase-heading bd-underline"> Dummy text</h2>
+          <div className="usecase-section">
+            <CloudNativeCard />
+            <DatabasesCard />
+            <DataScienceCard />
           </div>
-          <div className="featured-card_body">
-            <p>
-		Features and deployment models.
-            </p>
-            <strong>Read the benefits</strong>
+          <div className="usecase-section">
+            <CicdCard />
           </div>
         </div>
-        <div className="featured-card_item blockElement threeByGridBlock">
-          <div className="featured-card_header">
-            <h3>MongoDB</h3>
-          </div>
-          <div className="featured-card_body">
-            <p>
-		User guides to help you get started.
-            </p>
-            <strong>User guides</strong>
-          </div>
-        </div>
-        <div className="featured-card_item blockElement threeByGridBlock">
-          <div className="featured-card_header">
-            <h3>NuoDB</h3>
-          </div>
-          <div className="featured-card_body">
-            <p>
-		Data Science, logging, monitoring ...
-            </p>
-            <strong>Learn more</strong>
-          </div>
-        </div>
-        <div className="featured-card_item blockElement threeByGridBlock">
-          <div className="featured-card_header">
-            <h3>Percona</h3>
-          </div>
-          <div className="featured-card_body">
-            <p>
-		Data Science, logging, monitoring ...
-            </p>
-            <strong>Learn more</strong>
-          </div>
-        </div>
-        <div className="featured-card_item blockElement threeByGridBlock">
-          <div className="featured-card_header">
-            <h3>Redis</h3>
-          </div>
-          <div className="featured-card_body">
-            <p>
-		Data Science, logging, monitoring ...
-            </p>
-            <strong>Learn more</strong>
-          </div>
-        </div>
-        <div className="featured-card_item blockElement threeByGridBlock">
-          <div className="featured-card_header">
-            <h3>Cassandra</h3>
-          </div>
-          <div className="featured-card_body">
-            <p>
-		Data Science, logging, monitoring ...
-            </p>
-            <strong>Learn more</strong>
-          </div>
-        </div>
-
-      </div>
       </Container>
     );
 
     const DataScienceCard = () => (
-      <Container>
-        <div className="featured-title">
-          <h2>Cloud Native Datascience</h2>
-        </div>
-        <div className="featured-card-block gridBlock">
-        <div className="featured-card_item blockElement threeByGridBlock">
-          <div className="featured-card_header">
-            <h3>Kafka</h3>
-          </div>
-          <div className="featured-card_body">
-            <p>
-		Features and deployment models.
-            </p>
-            <strong>Read the benefits</strong>
-          </div>
-        </div>
+      <UnorderList
+        items=
+        {[{
+          heading: "Cloud Native Datascience",
+          items: [{
+            title: "Kafka",
+            link: siteConfig.baseUrl + 'docs/usecases/datascience/kafka'
+          },
+          {
+            title: "Kafka",
+            link: siteConfig.baseUrl + 'docs/usecases/datascience/kafka'
+          }]
+        }
+        ]}
+      />
+    );
 
-      </div>
-      </Container>
+    const DatabasesCard = () => (
+      <UnorderList
+        items=
+        {[{
+          heading: "Cloud Native Databases",
+          items: [{
+            title: "PostgreSQL",
+            link: siteConfig.baseUrl + 'docs/usecases/datascience/kafka'
+          },
+          {
+            title: "MongoDB",
+            link: siteConfig.baseUrl + 'docs/usecases/datascience/kafka'
+          },
+          {
+            title: "NuoDB",
+            link: siteConfig.baseUrl + 'docs/usecases/datascience/kafka'
+          },
+          {
+            title: "Percona",
+            link: siteConfig.baseUrl + 'docs/usecases/datascience/kafka'
+          },
+          {
+            title: "Redis",
+            link: siteConfig.baseUrl + 'docs/usecases/datascience/kafka'
+          },
+          {
+            title: "Cassandra",
+            link: siteConfig.baseUrl + 'docs/usecases/datascience/kafka'
+          }
+          ]
+        }
+        ]}
+      />
     );
 
     const CicdCard = () => (
-      <Container>
-        <div className="featured-title">
-          <h2>Cloud Native CI/CD </h2>
-        </div>
-        <div className="featured-card-block gridBlock">
-        <div className="featured-card_item blockElement threeByGridBlock">
-          <div className="featured-card_header">
-            <h3>GitLab</h3>
-          </div>
-          <div className="featured-card_body">
-            <p>
-		Features and deployment models.
-            </p>
-            <strong>Read the benefits</strong>
-          </div>
-        </div>
-      </div>
-      </Container>
+      <UnorderList
+        items=
+        {[{
+          heading: "Cloud Native CI/CD",
+          items: [{
+            title: "GitLab",
+            link: siteConfig.baseUrl + 'docs/usecases/datascience/kafka'
+          }]
+        }
+        ]}
+      />
     );
 
     const CloudNativeCard = () => (
-      <Container>
-        <div className="featured-title">
-          <h2>Cloud Native Infrastructure </h2>
-        </div>
-        <div className="featured-card-block gridBlock">
-        <div className="featured-card_item blockElement threeByGridBlock">
-          <div className="featured-card_header">
-            <h3>Logging</h3>
-          </div>
-          <div className="featured-card_body">
-            <p>
-		Features and deployment models.
-            </p>
-            <strong>Read the benefits</strong>
-          </div>
-        </div>
-        <div className="featured-card_item blockElement threeByGridBlock">
-          <div className="featured-card_header">
-            <h3>Monitoring</h3>
-          </div>
-          <div className="featured-card_body">
-            <p>
-		User guides to help you get started.
-            </p>
-            <strong>User guides</strong>
-          </div>
-        </div>
-        <div className="featured-card_item blockElement threeByGridBlock">
-          <div className="featured-card_header">
-            <h3>NFS or Shared Storage</h3>
-          </div>
-          <div className="featured-card_body">
-            <p>
-		Data Science, logging, monitoring ...
-            </p>
-            <strong>Learn more</strong>
-          </div>
-        </div>
-
-      </div>
-      </Container>
-    );
-
-    const TableHeadings = () => (
-      <Block layout="threeColumn">
-        {[
-          {
-            content: 'Cloud native storage and data management for enterprises is done easily using declarative YAMLS. Read more about OpenEBS Enterprise Platform and how you can use it for specific use cases.' ,
-            image: `${baseUrl}img/usecases.svg`,
-            imageAlign: 'top',
-            title: `[Product and Use Cases](${siteConfig.baseUrl}${siteConfig.docsUrl}/product/overview)`,
-            imageLink: siteConfig.baseUrl + 'docs/product/overview',
-
+      <UnorderList
+        items=
+        {[{
+          heading: "Cloud Native Infrastructure",
+          items: [{
+            title: "Logging",
+            link: siteConfig.baseUrl + 'docs/usecases/datascience/kafka'
           },
           {
-            content: 'Learn how to sign up with MayaData and get free access to the product. Signup and connect your clusters to either Director Online or Director Onprem and manage your OpenEBS installations easily.',
-            image: `${baseUrl}img/getstarted.svg`,
-            imageAlign: 'top',
-            title: `[Getting Started](${siteConfig.baseUrl}${siteConfig.docsUrl}/getstarted/signup.html)`,
-            imageLink: siteConfig.baseUrl + 'docs/getstarted/signup.html',
+            title: "Monitoring",
+            link: siteConfig.baseUrl + 'docs/usecases/datascience/kafka'
           },
           {
-            content: 'Free support is available for a limited period to OpenEBS Enterprise Platform when you connect your cluster to Director Online. Learn more about our support process and get access to our product knowledge base',
-            image: `${baseUrl}img/support.svg`,
-            imageAlign: 'top',
-            title: `[Getting Support](${siteConfig.baseUrl}${siteConfig.docsUrl}/support/supportprocess.html)`,
-            imageLink: siteConfig.baseUrl + 'docs/support/supportprocess.html',
-          },
-
+            title: "NFS or Shared Storage",
+            link: siteConfig.baseUrl + 'docs/usecases/datascience/kafka'
+          }]
+        }
         ]}
-      </Block>
+      />
     );
 
-    const Showcase = () => {
-      if ((siteConfig.users || []).length === 0) {
-        return null;
-      }
-
-      const showcase = siteConfig.users
-        .filter(user => user.pinned)
-        .map(user => (
-          <a href={user.infoLink} key={user.infoLink}>
-            <img src={user.image} alt={user.caption} title={user.caption} />
-          </a>
-        ));
-
-      const pageUrl = page => baseUrl + (language ? `${language}/` : '') + page;
-
-      return (
-        <div className="productShowcaseSection paddingBottom">
-          <h2>Who is Using This?</h2>
-          <p>This project is used by all these people</p>
-          <div className="logos">{showcase}</div>
-          <div className="more-users">
-            <a className="button" href={pageUrl('users.html')}>
-              More {siteConfig.title} Users
-            </a>
-          </div>
-        </div>
-      );
-    };
 
     return (
-        <div className="mainContainer">
-          <Welcome />
-          <div className="home-page-outlet">
-          <CloudNativeCard />
-          <DatabasesCard />
-          <DataScienceCard />
-          <CicdCard />
-          </div>
-        </div>
+      <div className="mainContainer">
+        <Welcome />
+        <ListUsecases />
+      </div>
     );
   }
 }

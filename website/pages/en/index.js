@@ -15,8 +15,8 @@ const GridBlock = CompLibrary.GridBlock;
 
 class HomeSplash extends React.Component {
   render() {
-    const {siteConfig, language = ''} = this.props;
-    const {baseUrl, docsUrl} = siteConfig;
+    const { siteConfig, language = '' } = this.props;
+    const { baseUrl, docsUrl } = siteConfig;
     const docsPart = `${docsUrl ? `${docsUrl}/` : ''}`;
     const langPart = `${language ? `${language}/` : ''}`;
     const docUrl = doc => `${baseUrl}${docsPart}${langPart}${doc}`;
@@ -76,9 +76,11 @@ class HomeSplash extends React.Component {
 
 class Index extends React.Component {
   render() {
-    const {config: siteConfig, language = ''} = this.props;
-    const {baseUrl} = siteConfig;
-
+    const { config: siteConfig, language = '' } = this.props;
+    const { baseUrl, docsUrl } = siteConfig;
+    const docsPart = `${docsUrl ? `${docsUrl}/` : ''}`;
+    const langPart = `${language ? `${language}/` : ''}`;
+    const docUrl = doc => `${baseUrl}${docsPart}${langPart}${doc}`;
     const Block = props => (
       <Container
         padding={['bottom', 'top']}
@@ -95,11 +97,11 @@ class Index extends React.Component {
     const Welcome = () => (
       <div
         className="paddingBottom"
-        style={{textAlign: 'center'}}>
+        style={{ textAlign: 'center' }}>
         <div className="docs-hero">
           <h1>OpenEBS Enterprise Platform</h1>
           <div className="hero-search-input">
-            <input className="form-control form-control-lg " placeholder="Search for something: "/>
+            <input className="form-control form-control-lg " placeholder="Search for something: " />
           </div>
         </div>
 
@@ -109,7 +111,7 @@ class Index extends React.Component {
     const FeatureCallout = () => (
       <div
         className="productShowcaseSection paddingBottom"
-        style={{textAlign: 'center'}}>
+        style={{ textAlign: 'center' }}>
         <h2>Feature Callout</h2>
         <MarkdownBlock>These are features of this project</MarkdownBlock>
       </div>
@@ -135,41 +137,46 @@ class Index extends React.Component {
           <h2>Product Docs</h2>
         </div>
         <div className="featured-card-block gridBlock">
-        <div className="featured-card_item blockElement threeByGridBlock">
-          <div className="featured-card_header">
-            <h3>Product Overview</h3>
-          </div>
-          <div className="featured-card_body">
-            <p>
-		Features and deployment models.
+          <a href={docUrl('product/overview')} >
+            <div className="featured-card_item blockElement threeByGridBlock" >
+              <div className="featured-card_header">
+                <h3>Product Overview</h3>
+              </div>
+              <div className="featured-card_body">
+                <p>
+                  Features and deployment models.
             </p>
-            <strong>Read the benefits</strong>
-          </div>
-        </div>
-        <div className="featured-card_item blockElement threeByGridBlock">
-          <div className="featured-card_header">
-            <h3>Getting started</h3>
-          </div>
-          <div className="featured-card_body">
-            <p>
-		User guides to help you get started.
+                <strong>Read the benefits</strong>
+              </div>
+            </div>
+          </a>
+          <a href={docUrl('getstarted/signup')} >
+          <div className="featured-card_item blockElement threeByGridBlock">
+            <div className="featured-card_header">
+              <h3>Getting started</h3>
+            </div>
+            <div className="featured-card_body">
+              <p>
+                User guides to help you get started.
             </p>
-            <strong>User guides</strong>
+              <strong>User guides</strong>
+            </div>
           </div>
-        </div>
-        <div className="featured-card_item blockElement threeByGridBlock">
-          <div className="featured-card_header">
-            <h3>Use cases</h3>
-          </div>
-          <div className="featured-card_body">
-            <p>
-		Data Science, logging, monitoring ...
+          </a>
+          <a href={`${baseUrl}usecases`} >
+          <div className="featured-card_item blockElement threeByGridBlock">
+            <div className="featured-card_header">
+              <h3>Use cases</h3>
+            </div>
+            <div className="featured-card_body">
+              <p>
+                Data Science, logging, monitoring ...
             </p>
-            <strong>Learn more</strong>
+              <strong>Learn more</strong>
+            </div>
           </div>
+          </a>
         </div>
-
-      </div>
       </Container>
     );
 
@@ -179,48 +186,48 @@ class Index extends React.Component {
           <h2>Product Support</h2>
         </div>
         <div className="featured-card-block gridBlock">
-        <div className="featured-card_item blockElement threeByGridBlock">
-          <div className="featured-card_header">
-            <h3>Knowledge Base</h3>
-          </div>
-          <div className="featured-card_body">
-            <p>
-		How-to articles and troublshooting guides.
+          <div className="featured-card_item blockElement threeByGridBlock">
+            <div className="featured-card_header">
+              <h3>Knowledge Base</h3>
+            </div>
+            <div className="featured-card_body">
+              <p>
+                How-to articles and troublshooting guides.
             </p>
-            <strong>Browse knowledge base</strong>
+              <strong>Browse knowledge base</strong>
+            </div>
           </div>
-        </div>
-        <div className="featured-card_item blockElement threeByGridBlock">
-          <div className="featured-card_header">
-            <h3>Community Forums</h3>
-          </div>
-          <div className="featured-card_body">
-            <p>
-		Share your learnings and problems
+          <div className="featured-card_item blockElement threeByGridBlock">
+            <div className="featured-card_header">
+              <h3>Community Forums</h3>
+            </div>
+            <div className="featured-card_body">
+              <p>
+                Share your learnings and problems
             </p>
-            <strong>Community forums</strong>
+              <strong>Community forums</strong>
+            </div>
           </div>
-        </div>
-        <div className="featured-card_item blockElement threeByGridBlock">
-          <div className="featured-card_header">
-            <h3>Submit a ticket</h3>
-          </div>
-          <div className="featured-card_body">
-            <p>
-		Did not find what you are looking for? We can help.
+          <div className="featured-card_item blockElement threeByGridBlock">
+            <div className="featured-card_header">
+              <h3>Submit a ticket</h3>
+            </div>
+            <div className="featured-card_body">
+              <p>
+                Did not find what you are looking for? We can help.
             </p>
-            <strong>Support portal</strong>
+              <strong>Support portal</strong>
+            </div>
           </div>
-        </div>
 
-      </div>
+        </div>
       </Container>
     );
     const TableHeadings = () => (
       <Block layout="threeColumn">
         {[
           {
-            content: 'Cloud native storage and data management for enterprises is done easily using declarative YAMLS. Read more about OpenEBS Enterprise Platform and how you can use it for specific use cases.' ,
+            content: 'Cloud native storage and data management for enterprises is done easily using declarative YAMLS. Read more about OpenEBS Enterprise Platform and how you can use it for specific use cases.',
             image: `${baseUrl}img/usecases.svg`,
             imageAlign: 'top',
             title: `[Product and Use Cases](${siteConfig.baseUrl}${siteConfig.docsUrl}/product/overview)`,
@@ -276,13 +283,13 @@ class Index extends React.Component {
     };
 
     return (
-        <div className="mainContainer">
-          <Welcome />
-          <div className="home-page-outlet">
+      <div className="mainContainer">
+        <Welcome />
+        <div className="home-page-outlet">
           <DocsCard />
           <SupportCard />
-          </div>
         </div>
+      </div>
     );
   }
 }

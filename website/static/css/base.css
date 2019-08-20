@@ -3,11 +3,9 @@
 }
 
 .mainContainer {
-  background: var(--light);
   padding: 0;
 }
 
 .docMainWrapper .mainContainer {
-  background: #fff;
-  padding: 40px 0;
+    padding: 40px 0;
 }
