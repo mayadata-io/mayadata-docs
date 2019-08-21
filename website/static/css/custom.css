@@ -21,3 +21,10 @@
 .gridBlock {
   flex-wrap: unset;
 }
+ul{
+  list-style-type: none;
+  padding-left:  0;
+}
+ul li{
+  font-size: 14px;
+}
