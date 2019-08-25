@@ -12,5 +12,25 @@ sidebar_label: Kafka
 
 
 
-Text
+Introduction
+
+
+
+Data related challenges
+
+
+
+Deployment models
+
+
+
+OpenEBS benefits
+
+
+
+Scenario configuration details
+
+
+
+Conclusion
 
