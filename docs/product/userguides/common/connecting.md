@@ -11,7 +11,7 @@ Prerequisites
 User needs to have a Kubernetes cluster build and kubectl  installed. 
 
 Login to Director Online
- ![loginpage](/home/anupriya/Pictures/login.png)
+ ![loginpage](/Pictures/login.png)
 
 
 
