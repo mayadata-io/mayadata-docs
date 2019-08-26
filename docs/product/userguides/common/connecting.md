@@ -8,7 +8,7 @@ sidebar_label: Connecting K8S clusters
 
 
 
-Pre-requisites on the cluster??
+Pre-requisites on the cluster???
 
 
 
