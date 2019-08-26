@@ -11,7 +11,7 @@ Prerequisites
 User needs to have a Kubernetes cluster build and kubectl  installed. 
 
 Login to Director Online
- <img src="/home/anupriya/Pictures/login.png" alt="Components of MayaData OpenEBS Enterprise Platform" style="width:600px;">
+ <img src="/home/anupriya/mayadata-docs/docs/assets/product/login.png" alt="Login page" style="width:600px;">
 
 
 
