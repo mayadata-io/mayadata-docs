@@ -14,7 +14,9 @@ The default branch is `staging`. Contributions are accepted to `staging` branch.
 
 
 
-### Prerequisites
+# Prerequisites..
+
+
 
 Ensure you have the latest version of [Node](https://nodejs.org/en/download/) installed. We also recommend you install [Yarn](https://yarnpkg.com/en/docs/install) as well.
 
