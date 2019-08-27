@@ -16,24 +16,24 @@ User needs to have a Kubernetes cluster and kubectl installed.
   <img src="/home/anupriya/mayadata-docs/docs/assets/product/CreateCluster.png"  style="width:550px margin-left:20px;">
        
 
-2.  Now select the details of the cluster carefully according to your configured Kubernetes cluster          that is to be added and provide the cluster with a name **(NOTE: Cluster cannot be renamed).**<br>   
+2.  Now select the details of the cluster carefully according to your configured Kubernetes cluster          that is to be added and provide the cluster with a name **(NOTE: Cluster cannot be renamed)**.<br>   
         _(OPTIONAL)_
         _If you are using Proxy Services, click on **Advanced** and enter the following details:_</br>
         1. HTTP_PROXY_</br>
         2. HTTPS_PROXY_</br>
         3. NO_PROXY_ </br>
-        Now,click on the **CONNECT** button.
+        Now, click on the **CONNECT** button.
 </br>
   <img src="/home/anupriya/mayadata-docs/docs/assets/product/ClusterConnect.png"  style="width:600px margin-left:20px;">
 
 3. Next, copy and execute the commands displayed on the screen on your Kubernetes cluster to deploy          DirectorOnline agents and connect to DirectorOnline.</br>
        <img src="/home/anupriya/mayadata-docs/docs/assets/product/Connection.png"  style="width:600px margin-left:20px;">
    
-  On a successful connection ,you will be automatically taken to the cluster landing page.
+  On a successful connection, you will be automatically taken to the cluster landing page.
 
 ###Verify your connection
 
-Click on **Overview** visible on the left sidebar ,and scroll down to check  DirectorOnline and OpenEBS component's status , initially Deployments will be in *pending state* then moving to *running state*,cluster register(component of Director Online) must have it's status as *Succeeded*.</br>
+Click on **Overview** visible on the left sidebar, and scroll down to check  DirectorOnline and OpenEBS component's status, initially Deployments will be in *pending state* then moving to *running state*,cluster register(component of Director Online) must have it's status as *Succeeded*.</br>
 <img src="/home/anupriya/mayadata-docs/docs/assets/product/verify_setup.png"  style="width:600px margin-left:20px;">
 
 
