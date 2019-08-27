@@ -7,12 +7,12 @@
 
 **Prerequisites**
 
-User needs to have a Kubernetes cluster build and kubectl  installed. 
+User needs to have a Kubernetes cluster and kubectl installed. 
 
 ###Connecting K8s cluster
 
 1.  To connect a new Kubernetes cluster click on **Clusters** on left sidebar and then click on <b>Connect a new Cluster</b> button present on right top corner.
-
+</br>
   <img src="/home/anupriya/mayadata-docs/docs/assets/product/CreateCluster.png"  style="width:550px margin-left:20px;">
        
 
@@ -23,17 +23,17 @@ User needs to have a Kubernetes cluster build and kubectl  installed.
         2. HTTPS_PROXY_</br>
         3. NO_PROXY_ </br>
         Now,click on the **CONNECT** button.
-
+</br>
   <img src="/home/anupriya/mayadata-docs/docs/assets/product/ClusterConnect.png"  style="width:600px margin-left:20px;">
 
-3. Next, copy and execute the commands displayed on the screen on your Kubernetes cluster to deploy          DirectorOnline agents and connect to DirectorOnline.
+3. Next, copy and execute the commands displayed on the screen on your Kubernetes cluster to deploy          DirectorOnline agents and connect to DirectorOnline.</br>
        <img src="/home/anupriya/mayadata-docs/docs/assets/product/Connection.png"  style="width:600px margin-left:20px;">
    
   On a successful connection ,you will be automatically taken to the cluster landing page.
 
 ###Verify your connection
 
-Click on **Overview** visible on the left sidebar ,and scroll down to check  DirectorOnline and OpenEBS component's status , initially Deployments will be in *pending state* then moving to *running state*,cluster register(component of Director Online) must have it's status as *Succeeded*.
+Click on **Overview** visible on the left sidebar ,and scroll down to check  DirectorOnline and OpenEBS component's status , initially Deployments will be in *pending state* then moving to *running state*,cluster register(component of Director Online) must have it's status as *Succeeded*.</br>
 <img src="/home/anupriya/mayadata-docs/docs/assets/product/verify_setup.png"  style="width:600px margin-left:20px;">
 
 
