@@ -11,18 +11,15 @@ User needs to have a Kubernetes cluster and kubectl installed.
 
 ### Connecting K8s cluster
 
-1.  To connect a new Kubernetes cluster click on **Clusters** on left sidebar and then click on <b>Connect a new Cluster</b> button present on right top corner.
-</br>
-  <img src="/docs/assets/product/CreateCluster.png"  style="width:550px margin-left:20px;">
+1.  To connect a new Kubernetes cluster click on **Clusters** on left sidebar and then click on <b>Connect a new Cluster</b>     button present on right top corner.
+   </br>
+   <img src="/docs/assets/product/CreateCluster.png"  style="width:550px margin-left:20px;">
        
 
-2.  Now select the details of the cluster carefully according to your configured Kubernetes cluster          that is to be added and provide the cluster with a name **(NOTE: Cluster cannot be renamed)**.
-</br>
-<<<<<<< HEAD
-  <img src="/home/anupriya/mayadata-docs/docs/assets/product/ClusterConnect.png"  style="width:600px margin-left:20px;">   
-=======
-  <img src="/docs/assets/product/ClusterConnect.png"  style="width:600px margin-left:20px;">   
-  <br>
+2.  Now select the details of the cluster carefully according to your configured Kubernetes cluster          that is to be       added and provide the cluster with a name **(NOTE: Cluster cannot be renamed)**.
+   <br> 
+    <img src="/docs/assets/product/ClusterConnect.png"  style="width:600px margin-left:20px;">   
+    <br>
 >>>>>>> 2ee2dc1e471fe3f1d51b4f57372fd713e6ff84a6
         (OPTIONAL)
         If you are using Proxy Services, click on **Advanced** and enter the following details:</br>
