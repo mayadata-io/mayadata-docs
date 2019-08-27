@@ -5,7 +5,7 @@
 ------
 
 
-**Prerequisites**
+###Prerequisites
 
 User needs to have a Kubernetes cluster and kubectl installed. 
 
