@@ -34,7 +34,7 @@ User needs to have a Kubernetes cluster and kubectl installed.
    
   On a successful connection, you will be automatically taken to the cluster landing page.
 
-###Verify your connection
+### Verify your connection
 
 Click on **Overview** visible on the left sidebar, and scroll down to check  DirectorOnline and OpenEBS component's status,we see agent components move to *running state*.</br>
 <img src="/docs/assets/product/verify_setup.png"  style="width:600px margin-left:20px;">
