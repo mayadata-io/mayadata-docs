@@ -19,13 +19,12 @@ User needs to have a Kubernetes cluster and kubectl installed.
 2.  Now select the details of the cluster carefully according to your configured Kubernetes cluster          that is to be added and provide the cluster with a name **(NOTE: Cluster cannot be renamed)**.
 </br>
   <img src="/home/anupriya/mayadata-docs/docs/assets/product/ClusterConnect.png"  style="width:600px margin-left:20px;">   
-  <br>
         (OPTIONAL)
         If you are using Proxy Services, click on **Advanced** and enter the following details:</br>
         1. HTTP_PROXY</br>
         2. HTTPS_PROXY</br>
         3. NO_PROXY </br>
-        Now, click on the **CONNECT** button.<br>
+        Now, click on the **CONNECT** button.
 </br>
   <img src="/home/anupriya/mayadata-docs/docs/assets/product/Connect2.png"  style="width:600px margin-left:20px;">
 
