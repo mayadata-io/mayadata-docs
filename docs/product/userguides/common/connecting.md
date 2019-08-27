@@ -5,8 +5,9 @@
 ------
 
 
-###Prerequisites
-User needs to have a Kubernetes cluster and kubectl installed. 
+**Prerequisites**
+
+User needs to have a Kubernetes cluster build and kubectl  installed. 
 
 ###Connecting K8s cluster
 
