@@ -4,10 +4,11 @@ title: Connecting Kubernetes clusters to Director
 sidebar_label: Connecting K8S clusters
 ---
 ------
+
 ### Prerequisites
 
-User needs to have a Kubernetes cluster and kubectl installed. 
-
+1. User needs to have a Kubernetes cluster and kubectl installed.<br>
+ 2. Users can in general connect any Kubernetes cluster versioned above 1.10.x to DirectorOnline and       OpenShift   versioned above 3.x.
 ### Connecting K8s cluster
 
 1.  To connect a new Kubernetes cluster click on **Clusters** on left sidebar and then click on              <b>Connect a new Cluster</b> button present on right top corner.
@@ -37,7 +38,7 @@ User needs to have a Kubernetes cluster and kubectl installed.
 
 ### Verify your connection
 
-Click on **Overview** visible on the left sidebar, and scroll down to check  DirectorOnline and OpenEBS component's status,we see agent components move to *running state*.
+Click on **Overview** visible on the left sidebar, and scroll down to check  DirectorOnline and OpenEBS component's status,you will see agent components move to *running state*.
 <br><br>
 <img src="/docs/assets/product/verify_setup.png"  >
 <br><br>
