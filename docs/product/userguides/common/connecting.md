@@ -1,7 +1,9 @@
 ---
- Connecting K8S clusters
+id: connecting
+title: Connecting Kubernetes clusters to Director
+sidebar_label: Connecting K8S clusters
 ---
-
+ Connecting K8S clusters
 ------
 
 
