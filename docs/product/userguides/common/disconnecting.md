@@ -1,8 +1,10 @@
+---
+id: disconnecting
+title: Disconnecting a Kubernetes cluster from Director
+sidebar_label: Disconnecting a cluster
+---
 
-
-
-
-## Disconnecting clusters from DirectorOnline
+------
 
 1. Click on Delete icon against your cluster on the right side of the screen. 
    <br><br>
