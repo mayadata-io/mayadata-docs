@@ -8,8 +8,7 @@
    <br><br>
    <img src="/docs/assets/product/Delete.png"><br><br>
 2. Click on Delete<br><br>
-   <img src="/docs/assets/product/PopUpDelete.png"><br>
-<br>
+   <img src="/docs/assets/product/PopUpDelete.png"><br><br>
 3. Deletion successful<br><br>
    <img src="/docs/assets/product/ScreenAfterDeletion.png"><br><br>
 
