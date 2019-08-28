@@ -26,6 +26,7 @@ It builds a logical topology of your application and infrastructure. A topology 
 
  #### Graphical Mode
  The graphical mode useful for obtaining a quick visual overview of the app, its infrastructure and connections between all the nodes.
+ <br>
  <figure>
  <img src="/docs/assets/product/Mapping.png">
 <center><figcaption><b>Graphical Mode</b></figcaption> <center>
@@ -47,6 +48,86 @@ Topology's view can be paused or monitored live. These options can be switched u
 <br><br>
 <img src="/docs/assets/product/LiveAndpause.png">
 <br><br>
+
+### Flexible Filtering
+
+On top of the screen you can see some other filtering options. Nodes can be filtered by CPU and Memory,  so that you can easily find containers utilizing most resources. In container view, you can filter by system, application or show all the containers and if you are running an app in Kubernetes then your app can be filtered by namespace and by container state as well(whether running, stopped, contained, uncontained).
+<br><br>
+<img src="/docs/assets/product/FlexibleFiltering.png">
+<br><br>
+### Real-time App and Container Metrics
+
+View contextual metrics, tags, and metadata for your containers by clicking on a node to display its details panel. Drilldown on processes inside your container to the hosts that your containers run on, arranged in expandable, sortable tables.
+Choose an overview of your container infrastructure, or focus on a specific microservice. Identify and correct issues to ensure the stability and performance of your containerized applications.
+<br><br>
+<img src="/docs/assets/product/RealTime.png">
+<br><br>
+### Powerful Search
+
+Click on the *search bar* on the top which allows you to search different components of the cluster. For example: if you want to search for the *dynamodb app* in the topology view, then type “dynamodb” in the search bar and it will highlight the list of pods, containers, and processes where dynamodb is present both in graphical and table mode.
+<br><br>
+<img src="/docs/assets/product/PowerfulSearch1.png">
+<br><br>
+For queries in the topology view, you will get the highlighted results by searching using different query tags. For example: if you want to view the resources having CPU usage greater than 3%, then type “cpu>3%” in the search bar. For more information about the query tags, you visit the help section in the bottom right corner. 
+<br><br>
+<img src="/docs/assets/product/PowerfulSearch2.png">
+<br><br>
+### Snapshot of a Volume
+
+DirectorOnline also allows taking instantaneous snapshots. Admin can carry out the following steps to take a snapshot of the volume using DirectorOnline:-
+1. Click on Volumes topology and select the particular volume.
+2. Click on the camera icon which is visible to create the snapshot.
+<br><br>
+<img src="/docs/assets/product/SnapshotVolume1.png">
+<br><br>
+3. A snapshot will be created and click the show snapshot filter on the bottom left to view the created    snapshot.
+<br><br>
+<img src="/docs/assets/product/SnapshotVolume2.png">
+<br><br>
+### Cloning a Snapshot
+
+DirectorOnline also allows taking a clone of a snapshot. Admin has to do the following steps to take a snapshot of the volume using DirectorOnline:-
+1. Click on Volumes topology and select the particular volume.
+2. Click on the clone icon which is visible to create the clone.
+<br><br>
+<img src="/docs/assets/product/CloningSnapshot1.png">
+<br><br>
+3. A new PVC and PV will be created and that can be used for any stateful workload.
+<br><br>
+<img src="/docs/assets/product/CloningSnapshot2.png">
+<br><br>
+
+### Describing Kubernetes Resources
+
+To describe a Kubernetes resource, open the view related to Kubernetes like Pods, Controllers, Volumes, etc and select the node to open the overview box and then click on the "describe" icon as shown in the image.
+<br><br>
+<img src="/docs/assets/product/K8sResource.png">
+<br><br>
+
+### OpenEBS Components
+
+If OpenEBS is installed in your Kubernetes cluster then you can visualize the OpenEBS components in Pools and Volumes View.
+
+Pools view will show the OpenEBS components such as Storage Pool claim, Storage Pool, Block Device, Disk, etc and their connections making it easy to understand your storage configurations.
+<br><br>
+<img src="/docs/assets/product/OpenEBSComp1.png">
+<br><br>
+Volumes view will show the OpenEBS components such as cStor Volume, cStor Volume Replica, etc. and their connections. From this view, it is easy to understand how OpenEBS manages your stateful workloads.
+<br><br>
+<img src="/docs/assets/product/OpenEBSComp2.png">
+<br><br>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
