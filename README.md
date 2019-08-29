@@ -5,7 +5,7 @@
 
 <hr>
 
-# Building docs:
+# Building docs: 
 
 
 The default branch is `staging`. Contributions are accepted to `staging` branch. The accepted doc changes are visible at docs.mayadatastaging.io 
@@ -14,11 +14,13 @@ The default branch is `staging`. Contributions are accepted to `staging` branch.
 
 
 
-### Prerequisites
+# Prerequisites
+
+
 
 Ensure you have the latest version of [Node](https://nodejs.org/en/download/) installed. We also recommend you install [Yarn](https://yarnpkg.com/en/docs/install) as well.
 
-> You have to be on Node >= 8.x and Yarn >= 1.5.
+* You have to be on Node >= 8.x and Yarn >= 1.5.
 
 ## Clone the code
 
@@ -30,27 +32,29 @@ git clone -b staging https://github.com/mayadata-io/mayadata-docs.git
 
 
 
-## On your console
+## To get a preview of .md file
 
-```
-cd website
-```
-
-
-
-```
-npm install
-```
-
-
-
-```
-npm start
-```
-
-
-
+1. For MAC
+   ```
+   1. cd website 
+   2. npm install
+   3. npm start
+   ```
 Then browse [here](http://localhost:3000)
+
+2. For Ubuntu<br>
+   On your terminal,
+    ```
+   1. sudo apt-get update
+   2. sudo apt install nodejs
+   3. sudo apt install npm
+   ```
+   If  installed successfully, run **npm -v** on your terminal, it should display the version of npm installed.
+    <br><br>
+    Now, to view:
+    1. $ cd website
+    2. $ npm start
+
 
 
 
