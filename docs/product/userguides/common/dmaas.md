@@ -89,7 +89,7 @@ DMaaS backup agent will be deployed on both the source and destination clusters 
              <li>Click on <b>Save</b> button.<br>
               <b>[Note: The same credentials will be used during scheduling of Data Motion.]</b>
               <br><br>
-              <img src="https://raw.githubusercontent.com/anupriya0703/mayadata-docs/Dmaas/docs/assets/product/DataMotion2.svg" onclick="window.open('/docs/assets/product/DataMotion3.svg', '_blank');" />
+              <img src="docs/assets/product/DataMotion2.svg" onclick="window.open('/docs/assets/product/DataMotion3.svg', '_blank');" />
              <br><br>
              </li>
             </ol>
