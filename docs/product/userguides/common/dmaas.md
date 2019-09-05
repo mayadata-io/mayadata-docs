@@ -50,59 +50,66 @@ DMaaS backup agent will be deployed on both the source and destination clusters 
 
 2. With the current implementation, AWS S3 and GCP are the third party storage location where the backup    of the application is getting stored. 
      #### Steps to schedule the backup transfer of the corresponding application.
-
-      1. Clicking on the application on the left sidebar redirects to a page where you can select the       application. By clicking on the application name you will be redirected to the corresponding       application page.<br><br>
-        <img src="/docs/assets/product/DataMotion1.svg"  onclick="window.open('/docs/assets/product/DataMotion1.svg', '_blank');" />
+    <ol>
+      <li> Clicking on the application on the left sidebar redirects to a page where you can select the       application. By clicking on the application name you will be redirected to the corresponding       application page.<br><br>
+      <img src="/docs/assets/product/DataMotion1.svg"  onclick="window.open('/docs/assets/product/DataMotion1.svg', '_blank');" />
         <br><br>
+        </li>
 
-      2. Select **DMaaS** on the selection box. Click on **New schedule** button.<br><br>
+      <li> Select <b>DMaaS</b> on the selection box. Click on <b>New schedule</b> button.<br><br>
       <img src="/docs/assets/product/DataMotion2.svg"  onclick="window.open('/docs/assets/product/DataMotion2.svg', '_blank');" />
-
-      3. Update the following details to create a backup schedule:
-        1. Cloud provider credentials from Provider credentials(if already saved).
-           <br>
-           <p style="text-align: center;"> OR </p>
-           <br>
-           If creating for the first time follow the following steps:
-           1. Select your **Cloud Provider**.
-           2. Click on **Add cloud credential**.<br><br>
-            **For GCP:**<br>
-              1.  Fill in the **Title** field:
-                 It is the name given to the credentials that are going to be provided.<br> 
-                 Rules to provide title:
-                  1. The name should start with letter.
-                  2.  Should be alphanumeric and with a maximum of 24 characters.
-                  3. May include hyphen (-). 
-                After adding these credentials, choose this name from the Provider credentials for the backup schedule.
-              2. Copy and paste the content from downloaded json file from GCP to the **Google cloud           credentials** field.
-              3. Click on **Save** button.<br>
-              **[Note: The same credentials will be used during scheduling of Data Motion.]**<br>
-              
+       </li>
+      <li> Update the following details to create a backup schedule:
+       Cloud provider credentials from Provider credentials(if already saved).
+      <p style="text-align: center;"> OR </p>
+      If creating for the first time follow the following steps:<br>
+       <ol>
+      <li> Select your <b>Cloud Provider</b>.</li>
+      <li> Click on <b>Add cloud credential</b>.</li>
+       <b>For GCP:</b><br>
+         <ol>
+             <li> Fill in the <b>Title</b> field:<br>
+                It is the name given to the credentials that are going to be provided.<br> 
+                Rules to provide title:<br>
+                  * The name should start with letter.<br>
+                  *  Should be alphanumeric and with a maximum of 24 characters.<br>
+                  * May include hyphen (-). <br>
+                After adding these credentials, choose this name from the Provider credentials for the backup schedule.</li>
+             <li> Copy and paste the content from downloaded json file from GCP to the <b>Google cloud           credentials</b> field.</li>
+             <li>Click on <b>Save</b> button.<br>
+              <b>[Note: The same credentials will be used during scheduling of Data Motion.]</b><br>
               <img src="/docs/assets/product/DataMotion3.svg" onclick="window.open('/docs/assets/product/DataMotion3.svg', '_blank');" />
              <br><br>
-            **For AWS:**<br>
-             1.  Fill in the **Title** field:
+             </li>
+            </ol>
+            <b>For AWS:</b><br>
+            <ol>
+             <li> Fill in the <b>Title</b> field:<br>
                  It is the name given to the credentials that are going to be provided.<br> 
-                 Rules to provide title:
-                  1. The name should start with letter.
-                  2.  Should be alphanumeric and with a maximum of 24 characters.
-                  3. May include hyphen (-). 
-                After adding these credentials, choose this name from the Provider credentials for the backup schedule.
-              2. Next, add Access key and secret key that you are provided by AWS.
-              3. Click on **Save** button.<br>
-              **[Note: The same credentials will be used during scheduling of Data Motion.]**<br>
+                 Rules to provide title:<br>
+                  1. The name should start with letter.<br>
+                  2.  Should be alphanumeric and with a maximum of 24 characters.<br>
+                  3. May include hyphen (-). <br>
+                After adding these credentials, choose this name from the Provider credentials for the backup schedule.</li>
+              <li>Next, add Access key and secret key that you are provided by AWS.</li>
+              <li>Click on <b>Save</b> button.<br>
+              <b>[Note: The same credentials will be used during scheduling of Data Motion.]</b><br>
               <img src="/docs/assets/product/AWS.svg" onclick="window.open('/docs/assets/product/AWS.svg', '_blank');" />
              <br><br>
-        2. Select the region from the dropdown where the backup is to be stored.<br>
-              Next, select the time interval as desired(This is the interval after which backup will occur).<br><br>
-             Then Schedule the backup using **Schedule now** button.
+             </li></ol>
+        <li> Select the region from the dropdown where the backup is to be stored.<br>
+              Next, select the time interval as desired(This is the interval after which backup will occur).<br><br></li>
+           <li>  Then Schedule the backup using <b>Schedule now</b> button.
              <br>
              <img src="/docs/assets/product/BackupSetup1.svg" onclick="window.open('/docs/assets/product/BackupSetup1.svg', '_blank');" />
              <br><br>
-      4. As soon as the DMaas agents are in running state, backup starts automatically.<br>
+         </li>
+
+      <li>As soon as the DMaas agents are in running state, backup starts automatically.<br>
          Once backup is completed you can see an auto generated schedule name on your screen.<br>
-         <img src="/docs/assets/product/BackupSetup2.svg" onclick="window.open('/docs/assets/product/BackupSetup2.svg', '_blank');" />
-             <br><br>
+      <img src="/docs/assets/product/BackupSetup2.svg" onclick="window.open('/docs/assets/product/BackupSetup2.svg', '_blank');" /><br><br>
+  </li>
+</ol>
 
 ### Restoring the application
    Restoration of the application can be done in two ways: 
@@ -117,14 +124,14 @@ DMaaS backup agent will be deployed on both the source and destination clusters 
           <h3><b> Workflow</h3></b>
              <ol>
                 <li> Click on **Application** on the left sidebar, click on DMaas and locate the cluster     that needs to be restored.</li>
-                <li> Once located, click on **restore** symbol next to the backup.
+                <li> Once located, click on **restore** symbol next to the backup.<br>
                 <img src="/docs/assets/product/Restore1.svg" onclick="window.open('/docs/assets/product/Restore1.svg', '_blank');" /></li>
                 <br><br>
                 <li>Select the same cluster name from the drop down menu and click on **Start restore** button.<br>
                 <img src="/docs/assets/product/Restore2.svg" onclick="window.open('/docs/assets/product/Restore2.svg', '_blank');" /></li>
                 <br><br>
                 </li>
-                <li>As soon as the restore starts, you see a pop up window on your screen.(In order to elaborately see the process of restore click on **Restore** link).
+                <li>As soon as the restore starts, you see a pop up window on your screen.(In order to elaborately see the process of restore click on **Restore** link).<br>
                 <img src="/docs/assets/product/RestoreStarted.svg" onclick="window.open('/docs/assets/product/RestoreStarted.svg', '_blank');" />
                 </li>
                 <li>The restoration goes through various checks:
@@ -134,19 +141,19 @@ DMaaS backup agent will be deployed on both the source and destination clusters 
                        <figure>
                        <br>
                             <img src="/docs/assets/product/PreflightCheck.svg"  onclick="window.open('/docs/assets/product/PreflightCheck.svg', '_blank');">
-                            <p style="text-align: center;"><figcaption><b>Preflight check</b></figcaption> </p>
+                            <figcaption><b><p style="text-align: center;">Preflight check</p></b></figcaption>
                         <br>
                        </figure>
                      <figure>
                        <br>
                             <img src="/docs/assets/product/RestoringBackup.svg" onclick="window.open('/docs/assets/product/RestoringBackup.svg', '_blank');">
-                            <p style="text-align: center;"><figcaption><b>Restoring Backup</b></figcaption> </p>
+                            <figcaption><b><p style="text-align: center;">Restoring Backup</p></b></figcaption>
                         <br>
                        </figure>
                   <figure>
                        <br>
                             <img src="/docs/assets/product/ActivatingApplication.svg" onclick="window.open('/docs/assets/product/ActivatingApplication.svg', '_blank');">
-                            <p style="text-align: center;"><figcaption><b>Activating Application</b></figcaption> </p>
+                            <figcaption><b><p style="text-align: center;">Activating Application</p></b></figcaption> 
                         <br>
                        </figure>
                   </li>
@@ -177,43 +184,36 @@ DMaaS backup agent will be deployed on both the source and destination clusters 
             <img src="/docs/assets/product/BackupDiffCluster.svg" onclick="window.open('/docs/assets/product/BackupDiffCluster.svg', '_blank');">
             </li>
             <li> Click on **Application** on the left sidebar, click on DMaas and locate the cluster     that needs to be restored.</li>
-                <li> Once located, click on **restore** symbol next to the backup.
+                <li> Once located, click on **restore** symbol next to the backup.<br>
                 <img src="/docs/assets/product/Restore1.svg" onclick="window.open('/docs/assets/product/Restore1.svg', '_blank');" /></li>
                 <br><br>
                 <li>Select the desired cluster name from the drop down menu and click on **Start restore** button.<br>
                 <img src="/docs/assets/product/Restore2.svg" onclick="window.open('/docs/assets/product/Restore2.svg', '_blank');" /></li>
                 <br><br>
                 </li>
-                <li>As soon as the restore starts, you see a pop up window on your screen.(In order to elaborately see the process of restore, click on **Restore** link).
+                <li>As soon as the restore starts, you see a pop up window on your screen.(In order to elaborately see the process of restore, click on **Restore** link).<br>
                 <img src="/docs/assets/product/RestoreStarted.svg" onclick="window.open('/docs/assets/product/RestoreStarted.svg', '_blank');" />
                 </li>
                 <li>The restoration goes through various checks:
                 <ul><li>Preflight check</li>
                 <li>Restoring backups</li>
-                <li>Activating applications</li>
-                </li></ul>
-                <ul>
-                  <li>
+                <li>Activating applications<br>
                        <figure>
                        <br>
                             <img src="/docs/assets/product/PreflightCheck.svg"  onclick="window.open('/docs/assets/product/PreflightCheck.svg', '_blank');">
-                            <p style="text-align: center;"><figcaption><b>Preflight check</b></figcaption> </p>
+                            <figcaption><b><p style="text-align: center;">Preflight check</p></b></figcaption> 
                         <br>
                        </figure>
-                  </li>
-                  <li>
                         <figure>
                        <br>
                             <img src="/docs/assets/product/RestoringBackup.svg" onclick="window.open('/docs/assets/product/RestoringBackup.svg', '_blank');">
-                            <p style="text-align: center;"><figcaption><b>Restoring Backup</b></figcaption> </p>
+                            <figcaption><b><p style="text-align: center;">Restoring Backup</p></b></figcaption> 
                         <br>
                        </figure>
-                  </li>
-                  <li>
                   <figure>
                        <br>
                             <img src="/docs/assets/product/ActivatingApplication.svg" onclick="window.open('/docs/assets/product/ActivatingApplication.svg', '_blank');">
-                           <p style="text-align: center;"><figcaption><b>Activating Application</b></figcaption> </p>
+                           <figcaption><b><p style="text-align: center;">Activating Application</p></b></figcaption> </p>
                         <br>
                        </figure>
                   </li>
@@ -229,9 +229,12 @@ DMaaS backup agent will be deployed on both the source and destination clusters 
       </ol>
       </details>
 ### Limitations:
+
 1. Backup of StatefulSet application is currently not supported.
 2. Backup support only for cStor volumes.
+
 ### Roadmap:
+
 1. The different namespace for a restored application other than the same namespace of source        application.
 2. Support MinIO as backup storage location.
 3. Schedule the backup of the same application to multiple storage providers.
