@@ -61,7 +61,7 @@ DMaaS backup agent will be deployed on both the source and destination clusters 
       3. Update the following details to create a backup schedule:
         1. Cloud provider credentials from Provider credentials(if already saved).
            <br>
-           <center>OR</center>
+           <p style="text-align: center;"> OR </p>
            <br>
            If creating for the first time follow the following steps:
            1. Select your **Cloud Provider**.
@@ -95,7 +95,6 @@ DMaaS backup agent will be deployed on both the source and destination clusters 
              <br><br>
         2. Select the region from the dropdown where the backup is to be stored.<br>
               Next, select the time interval as desired(This is the interval after which backup will occur).<br><br>
-        
              Then Schedule the backup using **Schedule now** button.
              <br>
              <img src="/docs/assets/product/BackupSetup1.svg" onclick="window.open('/docs/assets/product/BackupSetup1.svg', '_blank');" />
@@ -109,7 +108,7 @@ DMaaS backup agent will be deployed on both the source and destination clusters 
    Restoration of the application can be done in two ways: 
     <br>
       <details>
-      <summary>1. Restoration on same OpenEBS Cluster**(Click to see the workflow)**</summary>
+      <summary>1. Restoration on same OpenEBS Cluster **(Click to see the workflow)**</summary>
           <h3><b>Prerequisites</b></h3>
             <ol>
               <li> The original application and its associated components such as PVC, PV, CVR and SVC         should not exist.</li>
@@ -131,30 +130,23 @@ DMaaS backup agent will be deployed on both the source and destination clusters 
                 <li>The restoration goes through various checks:
                 <ul><li>Preflight check</li>
                 <li>Restoring backups</li>
-                <li>Activating applications</li>
-                </li></ul>
-                <ul>
-                  <li>
+                <li>Activating applications<br>
                        <figure>
                        <br>
                             <img src="/docs/assets/product/PreflightCheck.svg"  onclick="window.open('/docs/assets/product/PreflightCheck.svg', '_blank');">
-                            <center><figcaption><b>Preflight check</b></figcaption> <center>
+                            <p style="text-align: center;"><figcaption><b>Preflight check</b></figcaption> </p>
                         <br>
                        </figure>
-                  </li>
-                  <li>
-                        <figure>
+                     <figure>
                        <br>
                             <img src="/docs/assets/product/RestoringBackup.svg" onclick="window.open('/docs/assets/product/RestoringBackup.svg', '_blank');">
-                            <center><figcaption><b>Restoring Backup</b></figcaption> <center>
+                            <p style="text-align: center;"><figcaption><b>Restoring Backup</b></figcaption> </p>
                         <br>
                        </figure>
-                  </li>
-                  <li>
                   <figure>
                        <br>
                             <img src="/docs/assets/product/ActivatingApplication.svg" onclick="window.open('/docs/assets/product/ActivatingApplication.svg', '_blank');">
-                            <center><figcaption><b>Activating Application</b></figcaption> <center>
+                            <p style="text-align: center;"><figcaption><b>Activating Application</b></figcaption> </p>
                         <br>
                        </figure>
                   </li>
@@ -169,7 +161,7 @@ DMaaS backup agent will be deployed on both the source and destination clusters 
              </ol>
      </details>
       <details>
-      <summary>2. Restoration on different cluster**(Click to see the workflow)**</summary>
+      <summary>2. Restoration on different cluster **(Click to see the workflow)**</summary>
        <h3><b>Prerequisites</b></h3>
       <ol>
             <li>
@@ -205,7 +197,7 @@ DMaaS backup agent will be deployed on both the source and destination clusters 
                        <figure>
                        <br>
                             <img src="/docs/assets/product/PreflightCheck.svg"  onclick="window.open('/docs/assets/product/PreflightCheck.svg', '_blank');">
-                            <center><figcaption><b>Preflight check</b></figcaption> <center>
+                            <p style="text-align: center;"><figcaption><b>Preflight check</b></figcaption> </p>
                         <br>
                        </figure>
                   </li>
@@ -213,7 +205,7 @@ DMaaS backup agent will be deployed on both the source and destination clusters 
                         <figure>
                        <br>
                             <img src="/docs/assets/product/RestoringBackup.svg" onclick="window.open('/docs/assets/product/RestoringBackup.svg', '_blank');">
-                            <center><figcaption><b>Restoring Backup</b></figcaption> <center>
+                            <p style="text-align: center;"><figcaption><b>Restoring Backup</b></figcaption> </p>
                         <br>
                        </figure>
                   </li>
@@ -221,7 +213,7 @@ DMaaS backup agent will be deployed on both the source and destination clusters 
                   <figure>
                        <br>
                             <img src="/docs/assets/product/ActivatingApplication.svg" onclick="window.open('/docs/assets/product/ActivatingApplication.svg', '_blank');">
-                            <center><figcaption><b>Activating Application</b></figcaption> <center>
+                           <p style="text-align: center;"><figcaption><b>Activating Application</b></figcaption> </p>
                         <br>
                        </figure>
                   </li>
